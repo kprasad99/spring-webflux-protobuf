@@ -1,0 +1,24 @@
+= Spring WebFlux Protocol Buffer
+
+An example of spring reactive application with Protocol Buffer as JSON.
+
+== How to run.
+----
+mvn spring-boot:run
+----
+
+== Endpoints
+
+- POJO as JSON
++
+----
+$ curl http://localhost:8080/api/person
+$ curl http://localhost:8080/api/person/2
+----
+
+- ProtoBuf as JSON
++
+----
+$ curl http://localhost:8080/api/proto/person
+$ curl http://localhost:8080/api/proto/person/2
+----
